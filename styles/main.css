@@ -21,7 +21,6 @@ h4 {
   margin-block-end: 0;
 }
 
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -34,7 +33,6 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #f7f7f7;
-  
 }
 
 .wrapper {
@@ -129,6 +127,7 @@ body {
 
 .latest-articles {
   background-color: #cccccc;
+  padding-bottom: 233px;
 }
 
 .latest-articles__inner {
@@ -203,3 +202,51 @@ body {
   margin-left: 60px;
 }
 
+.get-notified {
+  background-color: #cccccc;
+  padding-bottom: 239px;
+}
+
+.get-notified__inner {
+  text-align: center;
+}
+
+.get-notified__title {
+  text-align: center;
+  width: 526px;
+  min-height: 41px;
+  font-size: 27px;
+  line-height: 40.5px;
+  color: #333333;
+  margin: 0 auto 59px auto;
+}
+
+.get-notified__form{
+  display: flex;
+  justify-content: center;
+}
+
+.get-notified__form-email {
+  width: 540px;
+  height: 60px;
+  border: 1px solid #666666;
+  outline: none;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif;
+  background-color: #cccccc;
+  font-size: 23px;
+  line-height: 27px;
+}
+
+.get-notified__form-submit {
+  width: 120px;
+  height: 60px;
+  background: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  color: #f7f7f7;
+  font-size: 23px;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+}
