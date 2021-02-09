@@ -221,7 +221,7 @@ body {
   margin: 0 auto 59px auto;
 }
 
-.get-notified__form{
+.get-notified__form {
   display: flex;
   justify-content: center;
 }
@@ -249,4 +249,81 @@ body {
   font-size: 23px;
   line-height: 27px;
   font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  background-color: #181617;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  width: 1440px;
+  min-height: 360px;
+  background-image: url(../images/footer-bg.png);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 360px;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.menu__item-social {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__item-social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s;
+}
+
+.menu__item-social + .menu__item-social {
+  margin-left: 27px;
+}
+
+.footer .menu__item {
+  margin-left: 86px;
+}
+
+.facebook {
+  background-image: url(../images/facebook.svg);
+  
+}
+
+.instagram {
+  background-image: url(../images/instagram.svg);
+}
+
+.pinterest {
+  background-image: url(../images/pinterest.svg);
+}
+
+.youtube {
+  background-image: url(../images/youtube.svg);
+}
+
+.facebook:hover {
+  background-image: url(../images/facebook-hover.svg);
+}
+
+.instagram:hover {
+  background-image: url(../images/instagram-hover.svg);
+}
+
+.pinterest:hover {
+  background-image: url(../images/pinterest-hover.svg);
+}
+
+.youtube:hover {
+  background-image: url(../images/youtube-hover.svg);
 }
