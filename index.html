@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wildfire</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Wildlife</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <img class="logo__image" src="images/logo.svg" alt="Wildlife">
+            <p class="logo__text">
+              Wildlife
+            </p>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__item-link" href="#">
+                  Blog
+                </a></li>
+              <li class="menu__item"><a class="menu__item-link" href="#">
+                  Contacts
+                </a></li>
+              <li class="menu__item"><a class="menu__item-link" href="#">
+                  <img class="menu__item-link-search" src="images/search-icon.svg" alt="search">
+                </a></li>
+              <li class="menu__item"><a class="menu__item-link sign-in" href="#">
+                  Sign In
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="survival">
+      <div class="container">
+        <div class="survival__inner">
+          <h1 class="survival__title">
+            Survival
+          </h1>
+          <p class="survival__text">
+            What this means is that we exist to help protect our environment and do in numbers of ways. You can save the
+            planet by donation.
+          </p>
+          <a class="survival__donate-btn" href="#">
+            Donate
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <script src="scripts/main.js"></script>
 </body>
+
 </html>
