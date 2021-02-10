@@ -53,9 +53,10 @@ body {
   margin-bottom: 120px;
 }
 
-.logo {
+.logo__link {
   display: flex;
   align-items: center;
+  color: #f7f7f7;
 }
 
 .logo__image {
@@ -87,10 +88,25 @@ body {
   font-weight: normal;
   font-size: 23px;
   line-height: 60px;
+  transition: all 0.4s;
+  border-bottom: 2px solid transparent;
+}
+
+.menu__item-link:hover {
+  border-bottom: 2px solid #cd6326;
+}
+
+.menu__item-link:active {
+  border-bottom: 2px solid #8f5613;
 }
 
 .menu__item-link-search {
   display: block;
+  transition: all 0.2s;
+}
+
+.menu__item-link-search:hover {
+  filter: invert(0.4) sepia(1) saturate(20) hue-rotate(0deg) brightness(0.88);
 }
 
 .sign-in {
@@ -98,6 +114,15 @@ body {
   padding: 9px 23px;
   border: 2px solid #cd6326;
   border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.sign-in:hover {
+  background: #cd6326;
+}
+
+.sign-in:active {
+  background: #8f5613;
 }
 
 .survival__title {
@@ -123,6 +148,15 @@ body {
   border-radius: 5px;
   color: #f7f7f7;
   padding: 16px 43px;
+  transition: all 0.4s;
+}
+
+.survival__donate-btn:hover {
+  background: #e39128;
+}
+
+.survival__donate-btn:active {
+  background: #8f5613;
 }
 
 .latest-articles {
@@ -160,12 +194,26 @@ body {
   text-align: center;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.latest-articles__slider-container {
+  width: 1020px;
+  overflow: hidden;
+}
+
+.latest-articles__slider-track {
+  display: flex;
+  transition: all 0.3s;
 }
 
 .latest-articles__slider-item {
   position: relative;
+  min-width: 300;
+}
+
+.latest-articles__slider-item + .latest-articles__slider-item {
   margin-left: 60px;
 }
 
@@ -196,10 +244,19 @@ body {
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  transition: all 0.3s;
 }
 
-.latest-articles__slider-right-arrow {
-  margin-left: 60px;
+.latest-articles__slider-right-arrow:hover,
+.latest-articles__slider-left-arrow:hover {
+  filter: invert(0.4) sepia(1) saturate(20) hue-rotate(0deg) brightness(0.88);
+  transform: scale(1.25);
+}
+
+.latest-articles__slider-right-arrow:disabled,
+.latest-articles__slider-left-arrow:disabled {
+  filter: invert(0.2) sepia(0) saturate(1) hue-rotate(0deg) brightness(0.5);
+  opacity: 0.2;
 }
 
 .get-notified {
@@ -249,6 +306,18 @@ body {
   font-size: 23px;
   line-height: 27px;
   font-family: "Roboto", sans-serif;
+  transition: all 0.4s;
+  outline: none;
+}
+
+.get-notified__form-submit:hover {
+  background: #e39128;
+  border: 1px solid #e39128;
+}
+
+.get-notified__form-submit:active {
+  background: #8f5613;
+  border: 1px solid #8f5613;
 }
 
 .footer {
@@ -297,7 +366,6 @@ body {
 
 .facebook {
   background-image: url(../images/facebook.svg);
-  
 }
 
 .instagram {
